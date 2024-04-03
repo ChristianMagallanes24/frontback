@@ -11,7 +11,7 @@ function Header() {
         <div className="back">
             <h1 className='titulo-back'>backend</h1>
         </div>
-        <div className='btn-proyectos'> <span className='spn1'>ver pro</span><span className='spn2'>yectos</span></div>
+       
     </div>
   )
 }
