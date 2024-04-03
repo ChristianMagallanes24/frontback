@@ -11,9 +11,11 @@
     rgb(0, 0, 0) 50%,
     rgb(248, 248, 248) 50%
   );
-
   height: 150px;
-
+  &:hover{
+        background: linear-gradient(to right, rgb(21, 21, 31) 50%, rgb(237, 237, 238) 50%);
+    transition: 0.5s;
+  }
   .btn-proyectos {
     display: flex;
     justify-content: center;
