@@ -20,7 +20,7 @@
     text-align: center;
     height: 700px;
     width: 50%;
-    background: linear-gradient(229deg, #f5f5f5, #656464);
+    background: #fa7f4b;
     background-size: 400% 400%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
@@ -35,7 +35,7 @@ font-size: 21px;
         background-color: rgba(8, 8, 8, 0.75);
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.125);
-        color: #fcfcfc;
+        color: #fffdfd;
         padding: 20px;
     }
     @include mobile {
@@ -44,7 +44,7 @@ font-size: 21px;
     }
     .titulo-front {
       font-size: 80px;
-     
+     color: #fff;
       font-family: "Rubik Doodle Shadow", system-ui;
       font-weight: 400;
       font-style: normal;
@@ -62,7 +62,7 @@ font-size: 21px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(229deg, #000000, #434343);
+    background: #ffaa67;
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 30s ease infinite;
