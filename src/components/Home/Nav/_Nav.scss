@@ -1,9 +1,13 @@
 .navbar {
-    background: linear-gradient(to right, #ffaa67 50%, #fa7f4b 50%);
+    position: sticky;
+    top: 0;
+    background: #161925;
+
     height: 60px;
     display: flex;
     justify-content: end;
     align-items: center;
+    z-index: 1;
     .nav_logo{
         color: #000000;
         font-weight: bold;
@@ -14,7 +18,7 @@
       
         a{
             margin: 15px;
-            color: #000000;
+            color: #ffffff;
             position: relative;
             text-decoration: none;
             font-family: "Work Sans", sans-serif;
@@ -38,22 +42,38 @@
 }
 
 @media (max-width: 768px) {
-    .nav_items{
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: -webkit-fill-available;        
-        transform: translateX(-100%);
-        transition: 0.3s ease all;
+    .navbar{
+        height: 50px;
+        background: #F0E7D8;;
+        
+        .nav_items{
+            
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background: #F0E7D8;
+           
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 0px 0px 200px 0px;
+            transform: translateX(-100%);
+            transition: 0.3s ease all;
+            a{
+                color: #000000;
+            }
+        }
+
     }
+    
     .nav_items.open{
+        
+
         transform: translateX(0) !important
     }
     .nav_toggle{
+        
         display: flex !important;
         flex-direction: column;                
         margin: 15px;
@@ -61,7 +81,7 @@
     .nav_toggle span{
         width: 30px;
         height: 4px;
-        background: rgb(0, 0, 0);
+        background: #000000;;
         margin-bottom: 5px;
         border-radius: 2px;             
         transform-origin: 5px 0px;

@@ -1,0 +1,17 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+    height: 100vh;
+    background-color: #000000;
+    background-image: url("../../../assets/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    .cargando-titulo{
+        color: #ffff;
+        margin-top: 550px;
+        font-family: "Rubik Doodle Shadow", system-ui;
+    }
+  }
+  

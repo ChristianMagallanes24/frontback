@@ -2,15 +2,19 @@
 
 
 
-import React from "react";
+
+import React, { useState, useEffect } from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Home/Header/Header';
 import Nav from './components/Home/Nav/Nav';
 import './sass/App.scss';
 import Proyectos from "./components/Home/Proyectos/Proyectos";
 import Boton from "./components/Home/Header/Boton";
+import LoadingScreen from "./components/Home/Carga/LoadingScreen";
 
 function App() {
+
   return (
     <div className="App">
       <Router>
@@ -27,14 +31,24 @@ function App() {
 }
 
 // Nuevo componente para la página de inicio
+// Nuevo componente para la página de inicio
 function Inicio() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simular una carga con un temporizador
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 2000 milisegundos (2 segundos) como ejemplo
+  }, []);
+
   return (
     <div className="App2">
-      <Header />
+     {loading ? <LoadingScreen /> : <Header />}
      <Boton />
-    
     </div>
   );
 }
+
 
 export default App;

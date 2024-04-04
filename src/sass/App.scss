@@ -6,7 +6,9 @@
 
 .boton-container {
   z-index: 1;
-  background: linear-gradient(to right, #ffaa67 50%, #fa7f4b  50%);
+  background: #161925;
+
+;
 
   height: 150px;
   &:hover{
@@ -38,7 +40,7 @@
     .spn2 {
       text-align: start;
       width: 50%;
-      color: #000;
+      color: #fcfbfb;
     }
   }
 }
