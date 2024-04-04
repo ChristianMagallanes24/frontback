@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import LoadingScreen from "../Carga/LoadingScreen";
+import LoadingScreen from "../../components/Home/Carga/LoadingScreen";
 
-function Proyectos() {
+function Back() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -17,11 +17,11 @@ function Proyectos() {
         <LoadingScreen />
       ) : (
         <section className='proyectos-container'>
-          {/* Aquí van los proyectos */}aaa
+          {/* Aquí van los proyectos */}
         </section>
       )}
     </div>
   );
 }
 
-export default Proyectos;
+export default Back;

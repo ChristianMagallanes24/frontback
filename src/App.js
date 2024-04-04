@@ -12,6 +12,8 @@ import './sass/App.scss';
 import Proyectos from "./components/Home/Proyectos/Proyectos";
 import Boton from "./components/Home/Header/Boton";
 import LoadingScreen from "./components/Home/Carga/LoadingScreen";
+import Front from './components/Front/Front';
+import Back from './components/Back/Back';
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
           {/* Agrega una ruta específica para la página de inicio */}
           <Route path="/" element={<Inicio />} />
           <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/front" element={<Front />} />
+          <Route path="/Back" element={<Back />} />
           
         </Routes>
       </Router>
@@ -30,7 +34,7 @@ function App() {
   );
 }
 
-// Nuevo componente para la página de inicio
+
 // Nuevo componente para la página de inicio
 function Inicio() {
   const [loading, setLoading] = useState(true);
@@ -45,7 +49,7 @@ function Inicio() {
   return (
     <div className="App2">
      {loading ? <LoadingScreen /> : <Header />}
-     <Boton />
+    
     </div>
   );
 }

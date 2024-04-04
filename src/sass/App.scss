@@ -6,15 +6,17 @@
 
 .boton-container {
   z-index: 1;
-  background: #161925;
-
+  background: #eaebf1;
+border-radius: 50%;
 ;
 
-  height: 150px;
+  height: 250px;
+  width:250px;
   &:hover{
     transition: 0.5s;
   }
   .btn-proyectos {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,15 +34,15 @@
 
     .spn1 {
       text-align: end;
-      color: #fff;
+      color: #000000;
 
-      width: 50%;
+    
     }
 
     .spn2 {
       text-align: start;
-      width: 50%;
-      color: #fcfbfb;
+     
+      color: #000000;
     }
   }
 }

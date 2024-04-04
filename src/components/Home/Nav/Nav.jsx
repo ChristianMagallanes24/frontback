@@ -55,9 +55,9 @@ const Navbar = () => {
           Proyectos
         </Link>
         <Link
-          to="/Frontend"
+          to="/Front"
           className={`nav-btn ${
-            location.pathname === "/Frontend" && "active"
+            location.pathname === "/Front" && "active"
           }`}
           onClick={() => {
             handleButtonClick();
@@ -67,8 +67,8 @@ const Navbar = () => {
           Frontend
         </Link>
         <Link
-          to="/Backend"
-          className={`nav-btn ${location.pathname === "/backend" && "active"}`}
+          to="/Back"
+          className={`nav-btn ${location.pathname === "/Back" && "active"}`}
           onClick={() => {
             handleButtonClick();
             scrollToTop();
