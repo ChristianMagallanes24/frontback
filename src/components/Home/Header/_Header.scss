@@ -1,9 +1,13 @@
 @import "../../../sass/MediaQueries";
 
 .header {
-  background-color: rgb(240, 240, 241);
-
+  
+  height: 100vh;
   display: flex;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -13,63 +17,108 @@
     justify-content: center;
   }
 
-  .front {
+  .header-content {
     display: flex;
-  
     justify-content: start;
     align-items: center;
     justify-content: center;
-   height: 1000px;
+    height: 100%;
     width: 100%;
-    background: #161925;
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-   @include tablet2{
-    flex-direction: column;
-   }
-    .frontx{
+ 
+    
+    @include tablet2 {
+      flex-direction: column;
+    }
+    .frontx {
       display: flex;
       flex-direction: column;
-      width: 60%;
-      .parrafo-container{
+      width: 700px;
+      .parrafo-container {
         font-family: "Work Sans", sans-serif;
         font-size: 21px;
-        width: 50%;
+        width: 90%;
         border-radius: 12px;
-        color: #fffdfd;
+        color: #000000;
         padding: 20px;
-        @include tablet2{
+        @include tablet2 {
           width: 100%;
-         }
-        @include mobile {
-            font-size: 12px;
-            width: 80%;
         }
-    }
-    @include mobile {
-      width: 100%;
-      height: 300px;
-    }
-    .titulo-front {
-      font-size: 80px;
-     color: #fff;
-      font-family: "Rubik Doodle Shadow", system-ui;
-      font-weight: 400;
-      font-style: normal;
-      animation: fadeInUp 0.5s ease-in-out;
-      @include mobile {
-        font-size: 40px;
-        margin: 0;
+        @include mobile {
+          font-size: 12px;
+          width: 80%;
+        }
       }
+      @include mobile {
+        width: 100%;
+        height: 300px;
+      }
+      .titulo-front {
+        font-size: 120px;
+        color: #000000;
+        font-family: "Rubik Doodle Shadow", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        animation: fadeInUp 0.5s ease-in-out;
+        .titulo-front:hover {
+          filter: blur(2px); /* Ajusta el nivel de blur según tus preferencias */
+          transition: filter 0.3s ease-in-out;
+        }
+        
+        @include mobile {
+          font-size: 40px;
+          margin: 0;
+        }
+      }
+      
     }
+    .boton-container {
+      z-index: 1;
+      background: #eaebf1;
+    border-radius: 50%;
+    
+    
+      height: 250px;
+      width:250px;
+      &:hover{
+        transition: transform 0.5s, box-shadow 0.5s;
+      }
+      .btn-proyectos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 30px;
+        border-radius: 30px;
+        transition: 0.5s;
+        font-family: "Rubik Doodle Shadow", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+        text-align: start;
+        transition: .5s;
+    }
+    
+    .btn-proyectos:hover {
+      background-color: #f0f0f0; /* Cambia al color que prefieras */
+      transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra sutil para profundidad */
+      color: #000000; /* Cambia al color que prefieras para el texto */
+    }
+    
+    .btn-proyectos .spn1 {
+        text-align: end;
+        color: #000000;
+    }
+    
+    .btn-proyectos:hover .spn1 {
+        color: #000000; /* Cambia al color que prefieras para el texto */
+    }
+    
     }
   }
-
-  
 }
-
 
 @-webkit-keyframes AnimationName {
   0% {

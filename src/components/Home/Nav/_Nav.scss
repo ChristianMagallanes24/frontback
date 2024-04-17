@@ -1,8 +1,8 @@
 .navbar {
     position: sticky;
     top: 0;
-    background: #161925;
-
+    background: transparent;
+    backdrop-filter: blur(10px); /* Aplicar desenfoque al fondo */
     height: 60px;
     display: flex;
     justify-content: end;
@@ -18,7 +18,7 @@
       
         a{
             margin: 15px;
-            color: #ffffff;
+            color: #020202;
             position: relative;
             text-decoration: none;
             font-family: "Work Sans", sans-serif;

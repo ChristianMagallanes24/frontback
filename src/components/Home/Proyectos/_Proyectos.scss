@@ -1,3 +1,16 @@
-.proyectos-container{
-    background-color: rgb(14, 85, 85);
-}
+.proyectos-container {
+    background-color: rgb(255, 255, 255);
+    .card-proyectos1{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-container{
+            height: 900px;
+            .img{
+                height: 100%;
+            }
+        }
+    }
+  }
+  

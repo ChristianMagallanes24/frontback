@@ -1,24 +1,26 @@
-import React from 'react'
-import Boton from './Boton'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className='header'>
-        
-        <div className="front">
-           <div className="frontx">
-           <h1 className='titulo-front'>Front and Back</h1>
-            <div className="parrafo-container">
-            <p>El frontend es la parte de una aplicación web o móvil que los usuarios ven y con la que interactúan directamente. Incluye la interfaz de usuario, el diseño, la navegación y la presentación de datos. En resumen, el frontend es la cara visible de la aplicación que permite a los usuarios interactuar con ella de manera intuitiva y atractiva.</p>
-            </div>
-           </div>
-           <Boton/>
+    <div className="header">
+      <div className="header-content">
+        <div className="frontx">
+          <h1 className="titulo-front">Front <br /> and Back</h1>
+          <div className="parrafo-container">
+            <p>
+            Bienvenidos a nuestro portfolio en el cual nos podrás conocer aún más
+            </p>
+          </div>
         </div>
-       
-       
+        <div className="boton-container">
+          <Link to="/proyectos" className="btn-proyectos">
+            <span className="spn1">Ver proyectos</span>
+          </Link>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

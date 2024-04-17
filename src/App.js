@@ -10,7 +10,6 @@ import Header from './components/Home/Header/Header';
 import Nav from './components/Home/Nav/Nav';
 import './sass/App.scss';
 import Proyectos from "./components/Home/Proyectos/Proyectos";
-import Boton from "./components/Home/Header/Boton";
 import LoadingScreen from "./components/Home/Carga/LoadingScreen";
 import Front from './components/Front/Front';
 import Back from './components/Back/Back';

@@ -1,17 +1,27 @@
 .loading-screen {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    align-items: start;
-    
-    height: 100vh;
-    background-color: #000000;
-    background-image: url("../../../assets/loading.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    .cargando-titulo{
-        color: #ffff;
-        margin-top: 550px;
-        font-family: "Rubik Doodle Shadow", system-ui;
-    }
+    align-items: center;
+  }
+  
+  .loading-animation {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
   

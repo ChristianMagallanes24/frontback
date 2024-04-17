@@ -4,45 +4,4 @@
 }
 @import "../sass/MediaQueries";
 
-.boton-container {
-  z-index: 1;
-  background: #eaebf1;
-border-radius: 50%;
-;
 
-  height: 250px;
-  width:250px;
-  &:hover{
-    transition: 0.5s;
-  }
-  .btn-proyectos {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 30px;
-    border-radius: 30px;
-    transition: 0.5s;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    background-color: transparent;
-    cursor: pointer;
-    text-align: start;
-
-    .spn1 {
-      text-align: end;
-      color: #000000;
-
-    
-    }
-
-    .spn2 {
-      text-align: start;
-     
-      color: #000000;
-    }
-  }
-}
